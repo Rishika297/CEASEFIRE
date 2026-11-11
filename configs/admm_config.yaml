@@ -1,0 +1,15 @@
+# Read by algorithms.base.ADMMSettings.load(); any field of ADMMSettings is allowed.
+# Write small numbers as 1.0e-4 (with a dot), otherwise YAML reads them as text.
+admm:
+  rho: auto              # number, or "auto" (scale chosen from the problem data)
+  max_iter: 3000
+  eps_abs: 1.0e-4
+  eps_rel: 1.0e-4
+  adaptive_rho: false
+  mu: 3.0               # residual-balancing threshold
+  mu_consensus: 10.0     # Consensus ADMM: smaller values made it unstable (see rho_sweep_ring_consensus.csv)
+  tau_incr: 2.0
+  tau_decr: 2.0
+  adapt_until: 300       # stop changing rho after this iteration (keeps convergence guarantee)
+  log_every: 1
+  verbose: false

@@ -1,0 +1,7 @@
+simulation:
+  dt: 0.5                   # hours per interval
+  horizon_h: 24.0           # T = 48
+  start_hour: 6.0           # 06:00 -> 06:00 next day
+  seeds: [0, 1, 2, 3, 4]
+references:
+  H_ref: 24.0               # C_ref and P_ref are computed from the instance when left out

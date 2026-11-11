@@ -1,0 +1,9 @@
+network:
+  topologies: [ring, star, mesh, random]
+  random_p: null            # null -> p = min(1, 2 ln N / N)
+  seed: 0
+  averaging:
+    mode: auto              # auto (hub for star, gossip otherwise) | hub | gossip
+    tol: 1.0e-6             # gossip stops when neighbours agree to this relative tolerance
+    max_rounds: 2000
+  link_drop_prob: 0.0       # >0 only for robustness experiments

@@ -1,0 +1,17 @@
+# Used by ev.fleet.load_fleet_config(); any key of ev.fleet.FleetConfig is allowed.
+fleet:
+  n_evs: 50
+  n_stations: 3
+  scenario: random          # morning_peak | evening_peak | random
+  demand: normal            # low | normal | high
+  seed: 0
+  eta: 0.92
+  soc_min: 0.0
+  soc_max: 1.0
+  battery_choices: [30.0, 40.0, 60.0, 75.0]
+  battery_probs:   [0.30, 0.30, 0.25, 0.15]
+  p_max_choices:   [3.3, 7.4, 11.0]
+  p_max_probs:     [0.20, 0.50, 0.30]
+  station_assignment: balanced
+  station_kw_per_ev: 5.0     # P_m^max = 5 kW x (#EVs at station m)
+  grid_cap_factor: 0.7       # P_grid^max = 0.7 x sum_m P_m^max

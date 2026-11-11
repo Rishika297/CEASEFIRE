@@ -1,0 +1,14 @@
+results/**
+!results/**/
+!results/**/.gitkeep
+plots/**
+!plots/**/
+!plots/**/.gitkeep
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+theory/*.aux
+theory/*.log
+theory/*.pdf

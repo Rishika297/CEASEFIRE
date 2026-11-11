@@ -1,0 +1,10 @@
+numpy
+scipy
+pandas
+cvxpy
+osqp
+networkx
+matplotlib
+pillow
+pyyaml
+pytest
